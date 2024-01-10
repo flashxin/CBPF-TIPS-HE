@@ -1,0 +1,41 @@
+#K-FOLD number
+Kfold: 5
+#classifier task kinds number
+kind: 2
+kindname: ['Not HE','HE']
+wandbEnable: true
+objname: 'HEpredict'
+wandbname: '消融实验单腰肝5抽样4-1去除注意力模块'
+#normal or custom
+GPUmode: 'normal'
+GPUseq: "1,2"
+GPUpara: false
+epoch: 200
+batchsize: 32
+lr: 0.005
+workers: 8
+testFreq: 1
+lrdecay: 0.99
+decaystep: 10
+#if acc>=baseacc,the weight file will be saved
+baseacc: 0.60
+savepath: 'weight/'
+#meta data file path
+metadata: 'DataSetsV2.0.xlsx'
+sampleinfo: '姓名'
+# the label list name
+lableinfo: '是否肝脑0无1有'
+dataset: '../DataSetsV2.0'
+datasetmidpath: ''
+datasetendpath: ['腰椎','肝']
+slicenumber: [1,5]
+dataloaderpath: 'fun/preTrainYao.csv'
+maskrate: 0.25
+blocksize: 32
+preWeight: 'weight/pretrainU7.08.pt'
+datanpy: '../savenpy'
+npysave: false
+imagesize: 224
+data_extern_train: 1
+data_extern_val: 1
+classWeight: [4,1]
