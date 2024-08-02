@@ -31,7 +31,8 @@ The original code is an algorithm designed for thin layer CT scanning,if you wan
 + Adjust the file directory to meet the code requirements
 + Modify the path to the dataset in yaml
 + The dcm/png/jpg file needs to be converted to an npy file in advance. The script for converting DCM to NPY already includes
-
+## weight
+The weight file is too large to upload, please contact 343925807@qq.com obtain
 ## Citation
 - If you found our work useful in your research, please consider citing our work at:
 ```
